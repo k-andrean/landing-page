@@ -49,6 +49,7 @@ ul {
 
 p {
     text-align: justify;
+    color:#f9faf8;
 }
 
 .right-elements {
@@ -178,6 +179,19 @@ p {
     justify-content: space-evenly;
     align-items: center;
     background-color: #3882f6;
-    min-width: 1000px;
+    min-width: 900px;
+    min-height: 150px;
     border-radius: 6px;
+    color: white;
+}
+
+.action-one {
+    margin-bottom: 0;
+}
+
+.footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937;
 }
