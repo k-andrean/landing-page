@@ -1,25 +1,36 @@
 body {
-    min-width: 100vh;
-    min-height:fit-content;
-    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    color:#f9faf8;
-    gap: 20px;
+
+    min-width: 100vh;
+    min-height:fit-content;
+
+    font-family: 'Roboto', sans-serif;
+
 }
+
+/* Header Section */
 
 .header {
     display: flex;
     flex-direction: column;
+    flex: 1;
+
+
     background-color: #1f2937;
-    padding-left:80px;
-    padding-right:80px;
-    padding-bottom:30px;
-    gap: 30px;
-    flex: 1;    
+    color:#f9faf8; 
+
+
+    padding-left:100px;
+    padding-right:100px;
+    padding-bottom:60px;
+    gap: 50px;
+    
 }
 
-.head {
+/* header logo and header link section */
+
+.head-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,49 +38,36 @@ body {
 }
 
 ul {
+    display: flex;
+
     list-style-type: none;
-    display: flex;
-    gap: 12px;
-    font-size: 18px;
     color: #e5e7eb;
+    font-size: 18px;
+
+    gap: 12px;
+    
+    
 }
 
-.inside,
-.card {
+/* hero main text and placeholder for image */
+
+.inside-section {
     display: flex;
-    
-}
-
-.left-elements,
-.right-elements {
-    
-    flex: 1;
-    
-}
-
-p {
-    text-align: justify;
-    color:#f9faf8;
-}
-
-.right-elements {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #6b727b;
-}
-
-.this {
-    font-weight: 900;
-    font-size: 48px;
-    margin-bottom: 0px;
-
+    gap: 10px;
 }
 
 .left-elements {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly
+}
+
+.hero-main {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 0;
 }
 
 .signup {
@@ -82,17 +80,45 @@ p {
     font-size: 14px;
 }
 
-/* content css */
+p {
+    text-align: justify;
+    color:#c0c2bf;
+}
 
-.content,
+
+.right-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b727b;
+    flex: 1;
+}
+
+
+
+
+/* Content Section */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+/* Content card and top section */
+
 .top {
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    padding: 30px 100px 80px 100px;
+    gap: 30px;
 }
 
-.content {
-    flex: 1;
-}
 
 .title {
     font-size: 36px;
@@ -103,14 +129,9 @@ p {
 .card {
     color: #e5e7eb;
     display: flex;
+    justify-content: space-around;
+    gap: 5px;
 
-}
-
-.top {
-    justify-content: center;
-    align-items: center;
-    padding: 30px 100px;
-    gap: 30px;
 }
 
 .card-body {
@@ -120,16 +141,14 @@ p {
     height: 150px;
 }
 
-.card-one,
-.card-two,
-.card-three,
-.card-four {
+.card-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex: 1;
     text-align: center;
+
     gap: 10px;
 }
 
@@ -138,60 +157,82 @@ p {
     color: #7d7e7f;
 }
 
+/* middle quote section */
+
 .middle {
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     background-color: #e5e7eb;
-    padding: 50px 150px;
+
+    padding: 60px 150px;
 }
 
 .quote {
     text-align: justify;
+
     font-style: italic;
     font-size: 36px;
     color: #72767a;
     font-weight:100;
+
     margin-bottom: 0;
 }
 
 .name {
+    display: flex;
+
     color: #1f2937;
     font-weight: bold;
     font-size: 20px;
-    display: flex;
+    
     margin-left:auto;
 }
 
+
+/* bottom call to action section */
+
 .bottom {
-    flex:1;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 80px;
+    flex:1;
+
     color: #1f2937;
+
+    padding: 80px 100px;
+    
 }
 
 .call {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+   
+    flex: 1;
+
     background-color: #3882f6;
-    min-width: 900px;
-    min-height: 150px;
     border-radius: 6px;
     color: white;
+}
+
+.call > .signup {
+    border:2px solid #f9faf8;
 }
 
 .action-one {
     margin-bottom: 0;
 }
 
+/* footer section */
 .footer {
     display:flex;
     align-items: center;
     justify-content: center;
+
     background-color: #1f2937;
 }
